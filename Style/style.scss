@@ -1,17 +1,75 @@
-body{
-    width: 960px;
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.account{
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px;
+@mixin iconFormatting{
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
     transition: color .1s;
-
     &:hover{
         color: #bbb;
     }
 }
+
+*{
+  margin: 0px;
+  padding: 0px;  
+}
+
+body{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#account{
+    color: rgb(27, 27, 27);
+    @include iconFormatting;
+    margin-left: 20px;
+}
+
+#basket{
+    color: rgb(27, 27, 27);
+    @include iconFormatting;
+}
+
+.TopSelling{
+    column-count: 350px 3;
+}
+
+$TopMargin:10px;
+.selling{
+    float: left;
+    margin-top: $TopMargin;
+    &:hover .btn{
+        animation: buttonRotation 1s 1s linear;
+    }
+}
+
+@keyframes buttonRotation{
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(-5deg);}
+    20% {transform: rotate(5deg);}
+    30% {transform: rotate(-5deg);} 
+    40% {transform: rotate(5deg);}
+    50% {transform: rotate(-5deg);}
+    60% {transform: rotate(5deg);}
+    70% {transform: rotate(-5deg);}
+    80% {transform: rotate(5deg);}
+    90% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#center{
+    margin: 0 48px;
+    margin-top: $TopMargin;
+}
+
+#TopSelling img{
+    height: 150px;
+}
+
+.card-body{
+    height:370px;
+}
+

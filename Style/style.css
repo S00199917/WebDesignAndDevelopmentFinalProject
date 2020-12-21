@@ -1,19 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   width: 960px;
   margin: 0 auto;
   padding: 0;
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
-.account {
+#account {
+  color: #1b1b1b;
   background-color: rgba(0, 0, 0, 0);
-  border: 0px;
+  border: none;
+  -webkit-transition: color .1s;
+  transition: color .1s;
+  margin-left: 20px;
+}
+
+#account:hover {
+  color: #bbb;
+}
+
+#basket {
+  color: #1b1b1b;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   -webkit-transition: color .1s;
   transition: color .1s;
 }
 
-.account:hover {
+#basket:hover {
   color: #bbb;
+}
+
+.TopSelling {
+  -webkit-column-count: 350px 3;
+          column-count: 350px 3;
+}
+
+.selling {
+  float: left;
+  margin-top: 10px;
+}
+
+.selling:hover .btn {
+  -webkit-animation: buttonRotation 1s 1s linear;
+          animation: buttonRotation 1s 1s linear;
+}
+
+@-webkit-keyframes buttonRotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  30% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  90% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes buttonRotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  30% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  90% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+#center {
+  margin: 0 48px;
+  margin-top: 10px;
+}
+
+#TopSelling img {
+  height: 150px;
+}
+
+.card-body {
+  height: 370px;
 }
 /*# sourceMappingURL=style.css.map */
