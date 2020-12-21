@@ -34,7 +34,7 @@ body{
 }
 
 .TopSelling{
-    column-count: 350px 3;
+    column-count: 400px 3;
 }
 
 $TopMargin:10px;
@@ -60,11 +60,6 @@ $TopMargin:10px;
     100% {transform: rotate(0deg);}
 }
 
-#center{
-    margin: 0 48px;
-    margin-top: $TopMargin;
-}
-
 #TopSelling img{
     height: 150px;
 }
@@ -73,3 +68,6 @@ $TopMargin:10px;
     height:370px;
 }
 
+#forms{
+    padding-left:40%;
+}

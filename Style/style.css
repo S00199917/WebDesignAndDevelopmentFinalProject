@@ -38,8 +38,8 @@ body {
 }
 
 .TopSelling {
-  -webkit-column-count: 350px 3;
-          column-count: 350px 3;
+  -webkit-column-count: 400px 3;
+          column-count: 400px 3;
 }
 
 .selling {
@@ -146,16 +146,15 @@ body {
   }
 }
 
-#center {
-  margin: 0 48px;
-  margin-top: 10px;
-}
-
 #TopSelling img {
   height: 150px;
 }
 
 .card-body {
   height: 370px;
+}
+
+#forms {
+  padding-left: 40%;
 }
 /*# sourceMappingURL=style.css.map */

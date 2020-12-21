@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the one stop shop for people who love old gen consoles. We have everythging from the primitive Atari to the slightly more modern Xbox original">
+    <meta name="keywords" content="xbox, microsoft, nes, n64, nintendo, atari, atari2600, sony, PlayStation, ps1">
     <title>Retro Gaming</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="Style/style.css">
@@ -13,29 +16,109 @@
 <body>
     <!-- Displays a nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigavigation">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="naqv-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a href="shop.html" class="nav-link">Shop<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-
-            <form class="form-inline my-2 my-lg-0" id="Icons">
-                <i class="fas fa-shopping-basket" id="basket"></i>
-                
-                <i class="fas fa-user-circle" id="account"></i>
-            </form>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="shop.html">Shop</a>
+            </div>
         </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="loginlogout"></button></button>
+
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-reference="parent">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" id="accountdetails" aria-labelledby="dropdownMenuReference">
+                <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+            </div>
+        </div>
+
+
+        <div class="btn-toolbar">
+            <a class="nav-item nav-link" href="checkout.html">
+                <button type="button" class="btn btn-secondary ml-2">
+                    Checkout <span class="badge badge-light" id="checkout"></span>
+                </button>
+            </a>
+        </div>
+
     </nav>
+
+    <div id="TopSelling" style="column-count: 3;">
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Atari-2600-Wood-4Sw-Set.jpg"
+                class="card-img-top" alt="atari2600.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Atari2600</h5>
+                <p class="card-text">The Atari 2600, originally branded as the Atari Video Computer System (Atari VCS)
+                    until November 1982</p>
+                <a href="#" class="btn btn-primary addtocart">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/NES-Console-Set.jpg" class="card-img-top"
+                alt="nes.jpg">
+            <div class="card-body">
+                <h5 class="card-title">NES</h5>
+                <p class="card-text">The Nintendo Entertainment System (NES) is an 8-bit third-generation home video
+                    game console produced by Nintendo</p>
+                <a href="#" class="btn btn-primary addtocart">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg"
+                class="card-img-top" alt="segaGenesis.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Sega Genesis</h5>
+                <p class="card-text">The Sega Genesis, known as the Mega Drive[b] outside North America, is a 16-bit
+                    fourth-generation home video game console developed and sold by Sega</p>
+                <a href="#" class="btn btn-primary addtocart">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Xbox-console.jpg" class="card-img-top"
+                alt="xbox.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Xbox original</h5>
+                <p class="card-text">The XBox was the first consol to be developed by Microsoft. It was released in 2001
+                </p>
+                <a href="#" class="btn btn-primary addtocart">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Nintendo-64-wController-L.jpg"
+                class="card-img-top" alt="n64.jpg">
+            <div class="card-body">
+                <h5 class="card-title">N64</h5>
+                <p class="card-text">The N64 was Nintendos introduction to the world of 3d gaming. It was released in
+                    1996</p>
+                <a href="#" class="btn btn-primary addtocart">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/PSX-Console-wController.jpg"
+                class="card-img-top" alt="ps1.jpg">
+            <div class="card-body">
+                <h5 class="card-title">PlayStation 1</h5>
+                <p class="card-text">The PlayStation was the first console to be developed by Sony. It was released in
+                    1994.</p>
+                <a href="#" class="btn btn-primary addtocart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="js/jquery-min.js"></script>

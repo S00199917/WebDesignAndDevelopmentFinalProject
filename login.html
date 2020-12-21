@@ -11,8 +11,44 @@
 </head>
 
 <body>
-    <form name="login" class="modal-content animate" action="" method="GET">
-        <h1>Login</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="shop.html">Shop</a>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" id="loginlogout"></button></button>
+            
+            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-reference="parent">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" id="accountdetails" aria-labelledby="dropdownMenuReference">
+                <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+            </div>
+        </div>
+
+
+        <div class="btn-toolbar">
+            <a class="nav-item nav-link" href="checkout.html">
+                <button type="button" class="btn btn-secondary ml-2">
+                    Checkout <span class="badge badge-light" id="checkout"></span>
+                </button>
+            </a>
+        </div>
+
+    </nav>
+
+    <form name="login" class="modal-content animate" action="" id="forms" method="GET">
         <div class="row">
             <div class="col-sm col-md-4">
                 <div class="alert alert-danger d-none" role="alert" id="loginerror">The username or password
