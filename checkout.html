@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Retro Gaming</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="Style/style.css">
-        <script src="https://kit.fontawesome.com/0decb188ac.js" crossorigin="anonymous"></script>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Gaming</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.min.css">
+    <script src="https://kit.fontawesome.com/0decb188ac.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
@@ -23,7 +25,7 @@
         </div>
         <div class="btn-group">
             <button type="button" class="btn btn-primary" id="loginlogout"></button></button>
-            
+
             <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
                 id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 data-reference="parent">
@@ -47,62 +49,71 @@
     </nav>
 
     <h1>Checkout</h1>
-    <div class="row">    
-        <div class="col-sm col-md-4"> 
-          <form name="paymentdetails" id="pdetails" action="" method="get">
+    <div class="row">
+        <div class="col-sm col-md-4">
+            <form name="paymentdetails" id="pdetails" action="" method="get">
                 <fieldset>
                     <legend>Delivery Details</legend>
                     <div class="form-group">
                         <label for="getFirstName">First name</label>
-                        <input type="text" class="form-control" id="getFirstName" name="firstname" value="firstname" required>
+                        <input type="text" class="form-control" id="getFirstName" name="firstname" value="firstname"
+                            required>
                     </div>
                     <div class="form-group">
-                        <label for="getLastName">Last name</label> 
-                        <input type="text" class="form-control" id="getLastName" name="lastname" value="surname" required>
-                    </div>    
+                        <label for="getLastName">Last name</label>
+                        <input type="text" class="form-control" id="getLastName" name="lastname" value="surname"
+                            required>
+                    </div>
                     <div class="form-group">
-                        <label for="getAddress1">Addresss</label> 
-                        <input type="text" class="form-control" id="getAddress1" name="address2" value="address 1" required>
-                    </div> 
+                        <label for="getAddress1">Addresss</label>
+                        <input type="text" class="form-control" id="getAddress1" name="address2" value="address 1"
+                            required>
+                    </div>
                     <div class="form-group">
-                        <label for="getAddress2">Addresss</label> 
-                        <input type="text" class="form-control" id="getAddress2" name="address2"  value="address 2"  required>
-                    </div> 
-                        <div class="form-group">
-                        <label for="getAddress3">Addresss</label> 
-                        <input type="text" class="form-control" id="getAddress3" name="address3"  value="address 3"  required>
-                    </div> 
-                </fieldset>    
+                        <label for="getAddress2">Addresss</label>
+                        <input type="text" class="form-control" id="getAddress2" name="address2" value="address 2"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="getAddress3">Addresss</label>
+                        <input type="text" class="form-control" id="getAddress3" name="address3" value="address 3"
+                            required>
+                    </div>
+                </fieldset>
                 <fieldset>
                     <legend>Payment Details</legend>
                     <div class="form-group">
-                        <label for="getCardName">Card Name</label> 
-                        <input type="text" class="form-control" id="getCardName" name="cardname" value="MR FIRSTNAME SURNAME" required>
-                    </div>   
-                    <div class="form-group">
-                        <label for="getCardNumber">Card Number</label> 
-                        <input type="text" class="form-control" id="getCardNumber" name="cardnumber" value="1234 5678 9102 3456" required>
+                        <label for="getCardName">Card Name</label>
+                        <input type="text" class="form-control" id="getCardName" name="cardname"
+                            value="MR FIRSTNAME SURNAME" required>
                     </div>
                     <div class="form-group">
-                        <label for="getCardCVC">CVC</label> 
-                        <input type="password" class="form-control" id="getCardNumber" name="cardnumber"  required>
+                        <label for="getCardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="getCardNumber" name="cardnumber"
+                            value="1234 5678 9102 3456" required>
                     </div>
-                </fieldset>    
+                    <div class="form-group">
+                        <label for="getCardCVC">CVC</label>
+                        <input type="password" class="form-control" id="getCardNumber" name="cardnumber" required>
+                    </div>
+                </fieldset>
                 <div class="alert alert-success d-none" id="payment-success" role="alert">
-                    Thank you for your purchase. You will receive delivery details via email. Please return to our <a href="shop.html">Shopping Page</a>.
+                    Thank you for your purchase. You will receive delivery details via email. Please return to our <a
+                        href="shop.html">Shopping Page</a>.
                 </div>
                 <div class="alert alert-danger d-none" id="payment-failure" role="alert">
-                  There seems to be a problem with the card details you entered.
-                </div>                
-                
+                    There seems to be a problem with the card details you entered.
+                </div>
+
                 <input type='submit' class="btn btn-primary" id="buy-button" value="Buy Now">
             </form>
 
 
-        </div> 
+        </div>
     </div>
 </body>
 <script src="js/jquery-min.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="Scripts/script.js"></script>
+<script src="Scripts/script.min.js"></script>
+
 </html>
